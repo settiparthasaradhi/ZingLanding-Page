@@ -1,55 +1,80 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #008080;; /* Light aqua background */
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: gray;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+h2{
+  text-align: center;
+}
+.menu-section {
+  margin: 2px;
+  padding: 10px;
+}
+
+.menu-table {
+  width: 100%;
+  margin-top: 5px;
+   
+}
+
+.menu-table th {
+  padding: 8px;
+  text-align: left;
+  font-weight: bolder;
   
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f8ff; /* Light aqua background */
-    color: #333;
-    overflow-x: hidden;
-  }
+}
+
+.menu-table td {
+  padding: 8px;
+  text-align: left;
   
-  header {
-    background-color: #008080; /* Teal */
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-  }
-  
-  .menu-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0px;
-    background-color: #8ad9e3;
-  }
-  
-  .menu-column {
-    list-style-type: none;
-    
-    border-radius: 8px;
-    padding: 10px;
-  }
-  
-  .column-title {
-    font-size: 1.0rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    text-decoration: underline;
-  }
-  
-  .menu-item {
-    font-size: 0.9rem;
-     
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 600px) {
-    .menu-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-  }
+}
+
+.menu-table td.price,
+.menu-table th:nth-child(2),
+.menu-table th:nth-child(4) {
+  text-align: center;
+}
+.price {
+  text-align: center;
+}
+
+.menu-table th {
+  background-color: #008080; /* Teal */
+  color: #fff;
+}
+ 
