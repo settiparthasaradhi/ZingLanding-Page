@@ -6,17 +6,15 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #008080;; /* Light aqua background */
-  color: #333;
+  font-family: Arial, sans-serif; 
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: gray;
-  color: #fff;
+  background-color: #008080;
+   color: white;
   padding: 0.5rem 1rem;
   position: sticky;
   top: 0;
@@ -39,6 +37,7 @@ header {
 
 h2{
   text-align: center;
+  color: black;
 }
 .menu-section {
   margin: 2px;
@@ -52,15 +51,17 @@ h2{
 }
 
 .menu-table th {
-  padding: 8px;
+  padding: 3px;
   text-align: left;
   font-weight: bolder;
+  color:#008080;
   
 }
 
 .menu-table td {
-  padding: 8px;
+  padding: 6px;
   text-align: left;
+   
   
 }
 
@@ -68,13 +69,14 @@ h2{
 .menu-table th:nth-child(2),
 .menu-table th:nth-child(4) {
   text-align: center;
+  
 }
 .price {
   text-align: center;
 }
 
 .menu-table th {
-  background-color: #008080; /* Teal */
-  color: #fff;
+  font-weight: bolder;
+  font-size: larger;
 }
  
