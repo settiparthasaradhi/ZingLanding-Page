@@ -1,85 +1,88 @@
 /* General Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-}
-
-/* Header */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #008080;
-  color: white;
-  padding: 0.5rem 1rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.logo h1 {
-  margin: 0;
-  font-size: 2rem;
-}
-
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  font-size: 1.1rem;
-  font-weight: bold;
-  line-height: 1.6;
-}
-
-/* Section Titles */
-h2 {
-  text-align: center;
-  color: black;
-  margin: 20px 0 10px;
-}
-
-/* Menu Section */
-.menu-section {
-  margin: 0px;
-  padding-left: 20px;
-}
-
-/* Menu Table */
-.menu-table {
-  width: 100%;
-  margin-top: 5px;
-  table-layout: fixed; /* Forces columns to have equal widths */
-  border-collapse: collapse; /* Merges table borders for cleaner look */
-}
-
-/* Table Headings and Cells */
-.menu-table th,
-.menu-table td {
-  width: 25%; /* Each column will take up 25% */
-  padding: 4px;
-  white-space: nowrap; /* Prevents text from breaking into multiple lines */
-  text-align: left;
-  margin-left: 0px;
-}
-
-/* Special Styling for Price Columns */
-.menu-table td.price,
-.menu-table th:nth-child(2),
-.menu-table th:nth-child(4) {
-  text-align: center;
-}
-
-/* Additional Styling for Table Headings */
-.menu-table th {
-  font-weight: bolder;
-  font-size: larger;
-  color: #008080;
-}
-
- 
- 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #008080;
+    color: white;
+    padding: 0.5rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 1.6;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    gap: 20px;
+    padding: 20px;
+  }
+  a{
+    text-decoration: none;
+    color: #008080;
+  }
+  .gallery-item {
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+    
+  }
+  
+  .gallery-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .gallery-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  
+  .gallery-item h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #008080;
+  }
+  
+  /* Footer */
+  footer {
+    background-color:gray;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    padding-bottom: 50px;
+  }
+  
