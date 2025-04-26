@@ -45,8 +45,8 @@ h2 {
 
 /* Menu Section */
 .menu-section {
-  margin: 2px;
-  padding: 10px;
+  margin: 0px;
+  padding: 1px;
 }
 
 /* Menu Table */
@@ -61,7 +61,7 @@ h2 {
 .menu-table th,
 .menu-table td {
   width: 25%; /* Each column will take up 25% */
-  padding: 8px;
+  padding: 4px;
   white-space: nowrap; /* Prevents text from breaking into multiple lines */
   text-align: left;
 }
