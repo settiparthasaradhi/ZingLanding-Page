@@ -6,15 +6,16 @@
 }
 
 body {
-  font-family: Arial, sans-serif; 
+  font-family: Arial, sans-serif;
 }
 
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #008080;
-   color: white;
+  color: white;
   padding: 0.5rem 1rem;
   position: sticky;
   top: 0;
@@ -35,48 +36,49 @@ header {
   line-height: 1.6;
 }
 
-h2{
+/* Section Titles */
+h2 {
   text-align: center;
   color: black;
+  margin: 20px 0 10px;
 }
+
+/* Menu Section */
 .menu-section {
   margin: 2px;
   padding: 10px;
 }
 
+/* Menu Table */
 .menu-table {
   width: 100%;
   margin-top: 5px;
-   
+  table-layout: fixed; /* Forces columns to have equal widths */
+  border-collapse: collapse; /* Merges table borders for cleaner look */
 }
 
-.menu-table th {
-  padding: 3px;
-  text-align: left;
-  font-weight: bolder;
-  color:#008080;
-  
-}
-
+/* Table Headings and Cells */
+.menu-table th,
 .menu-table td {
-  padding: 6px;
+  width: 25%; /* Each column will take up 25% */
+  padding: 8px;
+  white-space: nowrap; /* Prevents text from breaking into multiple lines */
   text-align: left;
-   
-  
 }
 
+/* Special Styling for Price Columns */
 .menu-table td.price,
 .menu-table th:nth-child(2),
 .menu-table th:nth-child(4) {
   text-align: center;
-  
-}
-.price {
-  text-align: center;
 }
 
+/* Additional Styling for Table Headings */
 .menu-table th {
   font-weight: bolder;
   font-size: larger;
+  color: #008080;
 }
+
+ 
  
