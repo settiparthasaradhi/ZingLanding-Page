@@ -38,8 +38,8 @@
   .gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 items per row */
-    gap: 20px;
-    padding: 20px;
+    gap: 40px;
+    padding: 40px;
   }
   a{
     text-decoration: none;
