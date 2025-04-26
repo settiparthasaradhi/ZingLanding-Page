@@ -39,7 +39,7 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr); /* 2 items per row */
     gap: 40px;
-    padding: 40px;
+    padding:20px 0px 0px 20px;
   }
   a{
     text-decoration: none;
@@ -52,12 +52,13 @@
     width: 400px;
     background-color: white;
     padding: 10px;
-    margin-right: 20px;
+     
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-decoration: none;
     color: #008080;
+    margin-left: 100p;
   }
   
   .gallery-item:hover {
